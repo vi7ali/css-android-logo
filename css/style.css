@@ -1,0 +1,60 @@
+div {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+div div {
+	background: #A4CA39;
+}
+
+.android {
+	margin: 100px auto;
+	width:334px;
+	height: 404px;
+}
+
+.head {
+	width:220px;
+	height: 100px;
+	border-radius: 110px 110px 0 0;
+}
+
+.l-eye, .r-eye {
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	position: absolute;
+	top: 50px;
+	border-radius: 20px;
+}
+
+.l-eye {
+	left: 55px;
+}
+
+.r-eye {
+	left: 145px;
+}
+
+.l-ant, .r-ant {
+	height: 70px;
+	width: 10px;
+	background: #A4CA39;
+	position: absolute;
+	top: -40px;
+}
+
+.l-ant {
+	left: 10px;
+	transform: rotate(-38deg);
+}
+
+.r-ant {
+	left: 200px;
+	transform: rotate(38deg);
+}
+
+.body {
+	height: ;
+}
