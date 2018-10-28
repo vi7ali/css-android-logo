@@ -18,6 +18,7 @@ div div {
 	width:220px;
 	height: 100px;
 	border-radius: 110px 110px 0 0;
+	margin: 0 auto;
 }
 
 .l-eye, .r-eye {
@@ -55,6 +56,57 @@ div div {
 	transform: rotate(38deg);
 }
 
+.middle-section {
+	height: 200px;	
+	background: #fff;	
+	top: 15px;
+}
+
+.l-arm, .body, .r-arm {
+	background: #A4CA39;
+	position: absolute;
+}
+
+.l-arm {
+	height: 150px;
+	width: 50px;
+	border-radius: 150px;
+}
+
 .body {
-	height: ;
+	left: 57px;
+	width: 220px;
+	height: 100%;
+	border-radius: 0 0 5% 5%;
+	margin: 0 auto;
+}
+
+.r-arm {
+	height: 150px;
+	width: 50px;
+	border-radius: 150px;
+	right: 0px;
+}
+
+.legs {
+	top: 15px;
+	background: #fff;
+	height: 104px;	
+}
+
+.l-leg, .r-leg {
+	position: absolute;	
+	background: #A4CA39;
+	width: 50px;
+	height: 100%;
+	border-radius: 0 0 50px 50px;
+}
+
+.l-leg {
+	left: 100px;
+
+}
+
+.r-leg {
+	right: 100px;
 }
