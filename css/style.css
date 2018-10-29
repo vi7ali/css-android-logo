@@ -1,3 +1,7 @@
+/* GENERAL DIV SPECS. Nested divs are positioned
+	 to give child elements the ability of 
+	 absolute position.*/
+
 div {
 	margin: 0 auto;
 	padding: 0;	
@@ -7,6 +11,9 @@ div div {
 	background: #A4CA39;
 	position: relative;
 }
+
+/* MAIN ELEMENTS SIZE AND PLACEMENT 
+	 FROM THE TOP */
 
 .android {
 	margin: 100px auto;
@@ -18,25 +25,18 @@ div div {
 	width:220px;
 	height: 100px;
 	top: 32px;
-	border-radius: 110px 110px 0 0;	
+	border-radius: 110px 110px 0 0;
+	transition: all 0.1s linear;
 }
 
-.l-eye, .r-eye {
-	width: 20px;
-	height: 20px;
-	background: #fff;
-	position: absolute;
-	top: 42px;
-	border-radius: 20px;
+.body {
+	height: 184px;
+	width: 220px;
+	top: 40px;
+	border-radius: 0 0 25px 25px;
 }
 
-.l-eye {
-	left: 50px;
-}
-
-.r-eye {
-	right: 50px;
-}
+/* HEAD ELEMENTS */
 
 .l-ant, .r-ant {
 	height: 70px;
@@ -55,25 +55,39 @@ div div {
 	transform: rotate(38deg);
 }
 
-.body {
-	height: 184px;
-	width: 220px;
-	top: 40px;
-	border-radius: 0 0 25px 25px;
+.l-eye, .r-eye {
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	position: absolute;
+	top: 42px;
+	border-radius: 20px;
+	transition: all 0.9s linear;
 }
+
+.l-eye {
+	left: 50px;
+}
+
+.r-eye {
+	right: 50px;
+}
+
+/* BODY ELEMENTS */
 
 .l-arm, .r-arm, .l-leg, .r-leg {
 	position: absolute;
-	width: 50px;
+	width: 50px;	
 }
 
 .l-arm, .r-arm {
 	height: 150px;
 	border-radius: 50px;
+	transition: all 0.3s linear;
 }
 
 .l-arm {
-	left: -58px;
+	left: -58px;	
 }
 
 .r-arm {
@@ -93,3 +107,25 @@ div div {
 .r-leg{
 	right: 45px;
 	}
+
+	/* ANIMATIONS */
+
+.l-arm:hover {
+	transform: rotate(35deg) translate(-15px, 0px);
+}
+
+.r-arm:hover {
+	transform: rotate(-35deg) translate(15px, 0px);
+}
+
+.head:hover {
+	transform: translate(0px, 8px);
+}
+
+.head:hover .l-eye {
+	background: #e52222;
+} 
+
+.head:hover .r-eye {
+	background: #e52222;
+}
